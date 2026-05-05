@@ -1,3 +1,27 @@
 /.obsidian/
 */.obsidian/
 */key.env
+# --- WSL & Windows Interop ---
+.vscode/                 # VS Code 환경 설정 (WSL 전용 설정 포함)
+.virtual_envs/           # WSL 내부 가상환경 폴더
+.python_history          # 리눅스 파이썬 실행 이력
+.bash_history            # WSL 터미널 명령어 이력
+
+# --- Python & Jupyter ---
+__pycache__/             # 컴파일된 바이트코드
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/      # 주피터 노트북 자동 저장 체크포인트
+.virtual_env/
+venv/
+env/
+
+# --- Windows Metadata ---
+Thumbs.db                # 윈도우 이미지 미리보기
+Desktop.ini              # 윈도우 폴더 설정
+$RECYCLE.BIN/            # 휴지통 데이터
+
+# Windows NTFS Alternate Data Streams
+*:Zone.Identifier
+# 모든 하위 폴더의 Identifier 파일 차단
+**/*:Zone.Identifier
